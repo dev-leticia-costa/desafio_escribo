@@ -13,6 +13,12 @@ function somatorio(numero) {
 function minhaFuncao(numero) {
   for (let i = 1; i <= _maxInputs; i++) {
     let input = prompt("Digite um número inteiro positivo:");
+    
+    if (input === null) {
+    	alert("Programa cancelado.");
+      	return
+    }
+    
     numero = parseInt(input);
 
     if (numero >= 0 && numero % 1 === 0) {
